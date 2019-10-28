@@ -57,10 +57,11 @@ figure.guessinggameimage {width: 100%;}
 
 .skills {
     padding-left: 20px;
-    background-color: whitesmoke; 
+    background-color: darkgreen; 
     padding-top: 30px; 
     padding-bottom: 30px;
     font-size: 24px; 
+    color: white; 
    
 }
 
@@ -81,7 +82,7 @@ font-size: 36px;
 }
 
 .errorresponse {
-    padding: 20px; 
+    padding: 25px; 
     font-size: 16px; 
 
 
@@ -91,7 +92,7 @@ font-size: 36px;
 
 
 .results {
-    padding: 50px;  
+    padding: 25px;  
     font-size: 20px;
     display: block; 
     line-height: 50px; 
@@ -104,11 +105,15 @@ font-size: 36px;
     padding: 15px; 
     margin: 20px; 
     font-size: 16px;
-    background-color: darkgreen; 
+    background-color: grey; 
     color: white;  
 }
 
+.resultsbutton a:hover {
+    background-color: navy; 
 
+
+}
 
 
 
