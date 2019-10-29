@@ -24,7 +24,7 @@ document.getElementById("slogan").innerHTML = companySlogan;
 const trees = ['Oak ', 'Pine ', 'Aspen ', 'Bald Cypress ']
 const errorElement = document.querySelector('#error')
 const displayResults = document.querySelector('#displayResults')
-
+const displayResults2 = document.querySelector('#displayResults2')
 
 
 // Display the list of trees inside the displayResults div
@@ -129,6 +129,7 @@ document.querySelector('#show_Name3').onclick = () => {
         const three = trees[2]
         console.log(three)
         listTrees()
+        displayResults2.textContent = three
     } else {
         errorElement.textContent = 'Dude, there are NO more than 3 TREES!'
         
@@ -144,6 +145,7 @@ document.querySelector('#show_Name3').onclick = () => {
 document.querySelector('#show_Name4').onclick = () => {
     if (trees.length > 3){
         const four = trees[3]
+        displayResults2.textContent = four
         console.log(four)
         listTrees(four)
     } else {
