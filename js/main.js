@@ -91,7 +91,7 @@ document.querySelector('#remove_tree2').onclick = () => {
 
 document.querySelector('#remove_treelast').onclick = () => {
     if (trees.length > 0){
-        trees.shift()
+        trees.pop()
         listTrees()
     } else {
         errorElement.textContent = 'Dude, I cannot remove the last tree cause there are NO TREES!'
