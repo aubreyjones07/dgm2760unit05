@@ -115,8 +115,7 @@ document.querySelector('#sort_Trees').onclick = () => {
 // Sort Trees All Lowercase
 
 document.querySelector('#lower_Trees').onclick = () => {
-        const lower = listTrees()
-        const lowerCase = lower.toLowerCase()
+        const lowerCase = trees.toLowerCase()
         console.log(lowerCase) 
         listTrees()
    
