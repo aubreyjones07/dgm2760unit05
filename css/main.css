@@ -5,12 +5,12 @@
 
 .main, .footer {
     margin: 0px auto; 
-    max-width: 1200px; 
+    max-width: 600px; 
 
 }
 
 
-figure.guessinggameimage img, figure.guessinggameimage img {width: 100%; max-width: 1200px;}
+figure.guessinggameimage img, figure.guessinggameimage img {width: 100%;}
 figure.guessinggameimage {width: 100%; margin: 0px auto;}
 
 
