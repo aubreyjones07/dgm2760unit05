@@ -5,11 +5,6 @@
 
 
 
-function loadImage() {
-    
-}
-
-
 
 var companyTitle = "The Arborist";
 document.getElementById("company").innerHTML = companyTitle;
@@ -25,17 +20,30 @@ const trees = ['Oak ', 'Pine ', 'Aspen ', 'Bald Cypress ']
 const errorElement = document.querySelector('#error')
 const displayResults = document.querySelector('#displayResults')
 const displayResults2 = document.querySelector('#displayResults2')
+const displayResults3 = document.querySelector('#displayResults3')
 
 
 // Display the list of trees inside the displayResults div
 
 const listTrees = () => {
 let treeList = ''
+
+
+
 trees.forEach(tree => {
 treeList += tree
 
+
 })
+
 displayResults.innerHTML = treeList 
+
+
+document.querySelector('#lower_Trees').onclick = () => {
+
+    let lower = treeList.toLowerCase()
+    displayResults2.innerHTML = lower
+}
 
 }
 
@@ -107,20 +115,23 @@ document.querySelector('#remove_treelast').onclick = () => {
 document.querySelector('#sort_Trees').onclick = () => {
         trees.sort()
         listTrees()
-     
+        /*const firstList = trees.sort()
+        const secondList = listTrees()
+        const order = firstList.push(secondList)
+        displayResults2.textContent = order.length
+        //let order = listTrees(trees.sort())
+        console.log(order)*/
 }
 
 
 
-// Sort Trees All Lowercase
+/* Sort Trees All Lowercase
 
 document.querySelector('#lower_Trees').onclick = () => {
-        const lowerCase = trees.toLowerCase()
-        console.log(lowerCase) 
         listTrees()
    
 }
-
+*/
 
 // Tree Number Three
 
@@ -129,7 +140,7 @@ document.querySelector('#show_Name3').onclick = () => {
         const three = trees[2]
         console.log(three)
         listTrees()
-        displayResults2.textContent = three
+        displayResults3.textContent = three
     } else {
         errorElement.textContent = 'Dude, there are NO more than 3 TREES!'
         
@@ -145,7 +156,7 @@ document.querySelector('#show_Name3').onclick = () => {
 document.querySelector('#show_Name4').onclick = () => {
     if (trees.length > 3){
         const four = trees[3]
-        displayResults2.textContent = four
+        displayResults3.textContent = four
         console.log(four)
         listTrees(four)
     } else {
@@ -155,7 +166,6 @@ document.querySelector('#show_Name4').onclick = () => {
 
 
 }
-
 
 
 

@@ -10,15 +10,15 @@
 }
 
 
-figure.guessinggameimage img, figure.guessinggameimage img {width: 100%; margin: 0px auto; max-width: 1200px;}
-figure.guessinggameimage {width: 100%;}
+figure.guessinggameimage img, figure.guessinggameimage img {width: 100%; max-width: 1200px;}
+figure.guessinggameimage {width: 100%; margin: 0px auto;}
 
 
 .companyname, .companyslogan {
     font-family: 'roboto';  
     position: absolute;  
     color: #ffffff; 
-    left: 70px;
+    left: 35px;
     font-weight: bolder;
     opacity: 0.8;
   filter: alpha(opacity=60);
